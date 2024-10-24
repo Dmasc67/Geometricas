@@ -4,6 +4,9 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['Figures'] = $_POST['Figures'];
     $figura = $_SESSION['Figures'];
+} else {
+    header("Location: index.php");
+    exit();
 }
 ?>
 
