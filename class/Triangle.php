@@ -13,7 +13,6 @@ class Triangle implements Figura {
     }
 
     public function calcularArea() {
-        // Fòrmula d'Heró per calcular l'àrea d'un triangle donats tres costats
         $semiperimetre = $this->calcularPerimetre() / 2;
         return sqrt($semiperimetre * ($semiperimetre - $this->costat1) * ($semiperimetre - $this->costat2) * ($semiperimetre - $this->costat3));
     }
